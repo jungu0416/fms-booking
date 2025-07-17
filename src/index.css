@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "MaruBuri", sans-serif;
   line-height: 1.5;
   font-weight: 400;
   text-rendering: optimizeLegibility;
@@ -17,4 +17,41 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+}
+
+/* Regular 폰트 */
+@font-face {
+  font-family: "MaruBuri";
+  src: url("/fonts/MaruBuriTTF/MaruBuri-Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Bold 폰트 */
+@font-face {
+  font-family: "MaruBuri";
+  src: url("/fonts/MaruBuriTTF/MaruBuri-Regular.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Black 폰트 */
+@font-face {
+  font-family: "MaruBuri";
+  src: url("/fonts/MaruBuriTTF/MaruBuri-Bold.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+/* HTML 태그에 기본 폰트 적용 */
+@layer base {
+  html {
+    font-family: "MaruBuri", sans-serif;
+  }
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
 }

@@ -15,11 +15,11 @@ export default function Home() {
   };
 
   return (
-    <div className="p-4">
+    <>
       <h1 className="mb-4 text-xl font-bold">연습실 예약 현황</h1>
       <button onClick={handleClick} className="rounded bg-blue-600 px-4 py-2">
         예약하기
       </button>
-    </div>
+    </>
   );
 }
